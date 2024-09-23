@@ -1,0 +1,729 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A88386E-CA67-42AF-A03D-837D51AF508A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>COVERALLS</RootNamespace>
+    <AssemblyName>COVERALLS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\111\test_coveralls\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>COVERALLS</ProductName>
+    <PublisherName>Скворцов Олег</PublisherName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>sgk.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9304A22BCF170FC529AD0C2FF7B5C4770D864703</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>COVERALLS_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Outlook, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_brigadir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_brigadir.Designer.cs">
+      <DependentUpon>add_brigadir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_codes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_codes.Designer.cs">
+      <DependentUpon>add_codes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_consist_brigade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_consist_brigade.Designer.cs">
+      <DependentUpon>add_consist_brigade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alert_norms_changed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alert_norms_changed.Designer.cs">
+      <DependentUpon>alert_norms_changed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="brigades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="brigades.Designer.cs">
+      <DependentUpon>brigades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="brigades_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="brigades_add.Designer.cs">
+      <DependentUpon>brigades_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cancel_vidano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cancel_vidano.Designer.cs">
+      <DependentUpon>cancel_vidano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cancel_vidano_add_positions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cancel_vidano_add_positions.Designer.cs">
+      <DependentUpon>cancel_vidano_add_positions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cards_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cards_add.Designer.cs">
+      <DependentUpon>cards_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="catalog_kontragent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalog_kontragent.Designer.cs">
+      <DependentUpon>catalog_kontragent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="catalog_kontragent_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalog_kontragent_add.Designer.cs">
+      <DependentUpon>catalog_kontragent_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="catalog_kontragent_edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalog_kontragent_edit.Designer.cs">
+      <DependentUpon>catalog_kontragent_edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="change_card.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="change_card.Designer.cs">
+      <DependentUpon>change_card.cs</DependentUpon>
+    </Compile>
+    <Compile Include="choose_nomenkl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choose_nomenkl.Designer.cs">
+      <DependentUpon>choose_nomenkl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="diff_between_zayav.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="diff_between_zayav.Designer.cs">
+      <DependentUpon>diff_between_zayav.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dismissal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dismissal.Designer.cs">
+      <DependentUpon>dismissal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dismissal_select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dismissal_select.Designer.cs">
+      <DependentUpon>dismissal_select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editnorms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editnorms.Designer.cs">
+      <DependentUpon>editnorms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="elapsed_period_siz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="elapsed_period_siz.Designer.cs">
+      <DependentUpon>elapsed_period_siz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="export_sotrudniki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="export_sotrudniki.Designer.cs">
+      <DependentUpon>export_sotrudniki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form10.Designer.cs">
+      <DependentUpon>Form10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form11.Designer.cs">
+      <DependentUpon>Form11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form12.Designer.cs">
+      <DependentUpon>Form12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form13.Designer.cs">
+      <DependentUpon>Form13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form9.Designer.cs">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="help_diff_zayav.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help_diff_zayav.Designer.cs">
+      <DependentUpon>help_diff_zayav.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kind_need.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kind_need.Designer.cs">
+      <DependentUpon>kind_need.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kind_zayavka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kind_zayavka.Designer.cs">
+      <DependentUpon>kind_zayavka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="limits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="limits.Designer.cs">
+      <DependentUpon>limits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="load_itogi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="load_itogi.Designer.cs">
+      <DependentUpon>load_itogi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movement.Designer.cs">
+      <DependentUpon>movement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movement_param.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movement_param.Designer.cs">
+      <DependentUpon>movement_param.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movement_select_department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movement_select_department.Designer.cs">
+      <DependentUpon>movement_select_department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movement_select_norms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movement_select_norms.Designer.cs">
+      <DependentUpon>movement_select_norms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movement_select_profession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movement_select_profession.Designer.cs">
+      <DependentUpon>movement_select_profession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movement_select_sotrudn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movement_select_sotrudn.Designer.cs">
+      <DependentUpon>movement_select_sotrudn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nakladn_vidano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nakladn_vidano.Designer.cs">
+      <DependentUpon>nakladn_vidano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nakladn_vidano_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nakladn_vidano_detail.Designer.cs">
+      <DependentUpon>nakladn_vidano_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="need.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="need.Designer.cs">
+      <DependentUpon>need.cs</DependentUpon>
+    </Compile>
+    <Compile Include="need_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="need_details.Designer.cs">
+      <DependentUpon>need_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="need_siz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="need_siz.Designer.cs">
+      <DependentUpon>need_siz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recruitment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recruitment.Designer.cs">
+      <DependentUpon>recruitment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report_vidano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report_vidano.Designer.cs">
+      <DependentUpon>report_vidano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="select_skl_ostatki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="select_skl_ostatki.Designer.cs">
+      <DependentUpon>select_skl_ostatki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="set_deflator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="set_deflator.Designer.cs">
+      <DependentUpon>set_deflator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="show_tie_nomenkl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="show_tie_nomenkl.Designer.cs">
+      <DependentUpon>show_tie_nomenkl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="skl_ostatki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="skl_ostatki.Designer.cs">
+      <DependentUpon>skl_ostatki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="spr_iais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="spr_iais.Designer.cs">
+      <DependentUpon>spr_iais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="spr_norns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="spr_norns.Designer.cs">
+      <DependentUpon>spr_norns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="useradd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="useradd.Designer.cs">
+      <DependentUpon>useradd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_change_data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_change_data.Designer.cs">
+      <DependentUpon>user_change_data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_remove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_remove.Designer.cs">
+      <DependentUpon>user_remove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_akt_spis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_akt_spis.Designer.cs">
+      <DependentUpon>view_akt_spis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_zayavki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_zayavki.Designer.cs">
+      <DependentUpon>view_zayavki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zayav_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zayav_detail.Designer.cs">
+      <DependentUpon>zayav_detail.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="add_brigadir.resx">
+      <DependentUpon>add_brigadir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_codes.resx">
+      <DependentUpon>add_codes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_consist_brigade.resx">
+      <DependentUpon>add_consist_brigade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alert_norms_changed.resx">
+      <DependentUpon>alert_norms_changed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="brigades.resx">
+      <DependentUpon>brigades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="brigades_add.resx">
+      <DependentUpon>brigades_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cancel_vidano.resx">
+      <DependentUpon>cancel_vidano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cancel_vidano_add_positions.resx">
+      <DependentUpon>cancel_vidano_add_positions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cards_add.resx">
+      <DependentUpon>cards_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalog_kontragent.resx">
+      <DependentUpon>catalog_kontragent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalog_kontragent_add.resx">
+      <DependentUpon>catalog_kontragent_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalog_kontragent_edit.resx">
+      <DependentUpon>catalog_kontragent_edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="change_card.resx">
+      <DependentUpon>change_card.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="choose_nomenkl.resx">
+      <DependentUpon>choose_nomenkl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="diff_between_zayav.resx">
+      <DependentUpon>diff_between_zayav.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dismissal.resx">
+      <DependentUpon>dismissal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dismissal_select.resx">
+      <DependentUpon>dismissal_select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editnorms.resx">
+      <DependentUpon>editnorms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="elapsed_period_siz.resx">
+      <DependentUpon>elapsed_period_siz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="export_sotrudniki.resx">
+      <DependentUpon>export_sotrudniki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form10.resx">
+      <DependentUpon>Form10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form11.resx">
+      <DependentUpon>Form11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form12.resx">
+      <DependentUpon>Form12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form13.resx">
+      <DependentUpon>Form13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form9.resx">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help_diff_zayav.resx">
+      <DependentUpon>help_diff_zayav.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kind_need.resx">
+      <DependentUpon>kind_need.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kind_zayavka.resx">
+      <DependentUpon>kind_zayavka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="limits.resx">
+      <DependentUpon>limits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="load_itogi.resx">
+      <DependentUpon>load_itogi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movement.resx">
+      <DependentUpon>movement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movement_param.resx">
+      <DependentUpon>movement_param.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movement_select_department.resx">
+      <DependentUpon>movement_select_department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movement_select_norms.resx">
+      <DependentUpon>movement_select_norms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movement_select_profession.resx">
+      <DependentUpon>movement_select_profession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movement_select_sotrudn.resx">
+      <DependentUpon>movement_select_sotrudn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nakladn_vidano.resx">
+      <DependentUpon>nakladn_vidano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nakladn_vidano_detail.resx">
+      <DependentUpon>nakladn_vidano_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="need.resx">
+      <DependentUpon>need.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="need_details.resx">
+      <DependentUpon>need_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="need_siz.resx">
+      <DependentUpon>need_siz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="recruitment.resx">
+      <DependentUpon>recruitment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report_vidano.resx">
+      <DependentUpon>report_vidano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="select_skl_ostatki.resx">
+      <DependentUpon>select_skl_ostatki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="set_deflator.resx">
+      <DependentUpon>set_deflator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="show_tie_nomenkl.resx">
+      <DependentUpon>show_tie_nomenkl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="skl_ostatki.resx">
+      <DependentUpon>skl_ostatki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="spr_iais.resx">
+      <DependentUpon>spr_iais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="spr_norns.resx">
+      <DependentUpon>spr_norns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="useradd.resx">
+      <DependentUpon>useradd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_change_data.resx">
+      <DependentUpon>user_change_data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_remove.resx">
+      <DependentUpon>user_remove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_akt_spis.resx">
+      <DependentUpon>view_akt_spis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_zayavki.resx">
+      <DependentUpon>view_zayavki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zayav_detail.resx">
+      <DependentUpon>zayav_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="COVERALLS_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.ico" />
+    <Content Include="sgk.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль .NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
